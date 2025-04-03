@@ -76,13 +76,4 @@ Regida pela legislação brasileira.
 Dúvidas ou sugestões: parenttime.contato@gmail.com
 
 ---
-
-## DICA PARA OS PAIS
-
-**Brincadeiras ao Ar Livre**
-
-Reserve um tempo para passear e brincar com seu filho(a) em ambientes abertos. Essas atividades fortalecem vínculos, estimulam criatividade, promovem saúde e desenvolvimento físico e emocional.
-
----
-
 **AO UTILIZAR O APLICATIVO, VOCÊ CONCORDA COM TODOS OS TERMOS ACIMA.**
