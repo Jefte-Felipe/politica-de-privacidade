@@ -93,3 +93,12 @@ ol.toc li {
   color: #6b7280;
   font-size: 14px;
 }
+
+.legal-pre {
+  white-space: pre-wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #1f2937;
+}
