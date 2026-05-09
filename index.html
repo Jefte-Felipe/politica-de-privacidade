@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ParentTime | Histórias para Dormir</title>
+  <meta
+    name="description"
+    content="ParentTime é um app premium com histórias para dormir, sons relaxantes e momentos especiais em família."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./assets/home.css" />
+  <!-- Google Search Console:
+       quando verificar o domínio, substitua o valor abaixo.
+  <meta name="google-site-verification" content="COLE_AQUI_SEU_TOKEN" />
+  -->
+</head>
+<body>
+  <div class="aurora aurora-top"></div>
+  <div class="aurora aurora-bottom"></div>
+
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="ParentTime início">
+        <img src="./assets/parenttime-logo.png" alt="Logo ParentTime" class="brand-logo" />
+        <span>ParentTime</span>
+      </a>
+      <a class="ghost-link" href="./privacy-policy/">Privacidade</a>
+    </header>
+
+    <section class="hero card">
+      <div class="hero-copy">
+        <p class="eyebrow">Experiência Premium</p>
+        <h1>Histórias para dormir que acalmam a casa inteira.</h1>
+        <p class="subtitle">
+          O ParentTime combina narrativas infantis, trilhas relaxantes e uma experiência
+          cuidadosamente desenhada para pais e filhos.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./privacy-policy/">Política de Privacidade</a>
+          <a class="btn btn-secondary" href="./terms-and-conditions/">Termos de Serviço</a>
+        </div>
+
+        <p class="meta-note">
+          Suporte oficial: <a href="mailto:parenttime.contato@gmail.com">parenttime.contato@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <img src="./assets/parenttime-logo.png" alt="" />
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="mini-card">
+        <h2>Privacidade em primeiro lugar</h2>
+        <p>
+          Tratamento de dados com transparência para famílias, responsáveis e assinantes do app.
+        </p>
+      </article>
+      <article class="mini-card">
+        <h2>Termos claros</h2>
+        <p>
+          Regras de uso, assinatura, renovação e responsabilidades explicadas em linguagem objetiva.
+        </p>
+      </article>
+      <article class="mini-card">
+        <h2>Design confiável</h2>
+        <p>
+          Interface elegante e estável para reforçar confiança em cada etapa da jornada de login.
+        </p>
+      </article>
+    </section>
+
+    <section class="legal-links card">
+      <h2>Documentos legais</h2>
+      <p>
+        Estes links são públicos e permanentes para consulta:
+      </p>
+      <ul>
+        <li><a href="./privacy-policy/">Política de Privacidade do ParentTime</a></li>
+        <li><a href="./terms-and-conditions/">Termos e Condições do ParentTime</a></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> ParentTime. Todos os direitos reservados.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 Este pacote publica páginas legais com visual profissional e URLs estáveis:
 
+- `/`
 - `/privacy-policy/`
 - `/terms-and-conditions/`
 
@@ -16,6 +17,7 @@ Use o repositório: `Jefte-Felipe/politica-de-privacidade`.
    - **Branch:** `main` / `(root)`
 4. Salve e aguarde o deploy.
 5. URLs finais esperadas:
+   - `https://jefte-felipe.github.io/politica-de-privacidade/`
    - `https://jefte-felipe.github.io/politica-de-privacidade/privacy-policy/`
    - `https://jefte-felipe.github.io/politica-de-privacidade/terms-and-conditions/`
 
