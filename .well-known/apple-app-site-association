@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "FN8G8SV5NK.com.control.parenttime",
+        "paths": ["/share/story/*", "/s/*"]
+      }
+    ]
+  }
+}

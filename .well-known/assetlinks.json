@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.control.parenttime",
+      "sha256_cert_fingerprints": [
+        "90:07:C3:95:96:B4:A2:02:A3:2B:D5:65:22:54:1F:02:F4:37:8C:3D:CD:86:35:94:A0:15:DB:03:33:FF:24:09",
+        "59:23:62:7A:A5:B4:D0:85:C3:0D:8D:B5:58:65:39:62:F4:19:20:4E:E4:FD:76:58:64:E4:B9:60:5B:49:B4:86"
+      ]
+    }
+  }
+]

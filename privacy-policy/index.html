@@ -18,12 +18,21 @@
   <h1>Política de Privacidade ParentTime</h1>
   <hr class="divider"/>
   <pre class="legal-pre">Data de entrada em vigor: 07 de maio de 2026
-Última atualização: 16 de maio de 2026
+Última atualização: 17 de maio de 2026
 
 Canal de contato: parenttime.contato@gmail.com
 
 IMPORTANTE:
 Este documento foi elaborado para o aplicativo ParentTime, em português, voltado a histórias infantis, conteúdos de áudio e sons para dormir, destinado ao uso por pais, mães, responsáveis legais e famílias no Brasil.
+
+RESUMO (ALINHADO AO APLICATIVO ATUAL):
+• O ParentTime é usado por pais e responsáveis (18+). Crianças não criam conta.
+• Não exibimos publicidade de terceiros no aplicativo.
+• Não utilizamos SDKs de analytics de terceiros (por exemplo, Firebase Analytics, Mixpanel ou equivalentes).
+• Não vendemos dados pessoais nem usamos dados para publicidade comportamental.
+• Coletamos dados necessários para conta, login, assinatura, favoritos, histórico de audição (quando logado), lembretes opcionais por push e funcionamento do serviço.
+• Compras são processadas pela App Store (e, no Android, Google Play); o ParentTime não recebe número completo de cartão.
+• Infraestrutura: Google Firebase (autenticação, banco de dados, armazenamento, funções e notificações push) e RevenueCat (gestão de assinaturas), além de login Apple e Google quando você escolhe essas opções.
 
 1. QUEM SOMOS
 
@@ -106,30 +115,28 @@ i) informações necessárias para validar o acesso ao conteúdo pago.
 
 Quando a compra é feita pela App Store ou pela Google Play, os dados completos do cartão, conta bancária ou meio de pagamento são tratados diretamente pela Apple, Google ou pelo respectivo processador de pagamento. O ParentTime não recebe o número completo do cartão nem as credenciais financeiras completas do usuário.
 
-5.4. Dados de uso do aplicativo
+5.4. Dados de uso do aplicativo (conta do responsável)
 
-Podemos coletar informações sobre como o aplicativo é utilizado, incluindo:
+Quando você está logado, podemos armazenar no Firebase (Firestore), vinculados à sua conta:
 
-a) histórias, sons ou conteúdos acessados;
-b) favoritos, listas, histórico de reprodução ou progresso, quando esse recurso existir;
-c) interações com botões, telas, categorias e recursos;
-d) tempo aproximado de uso;
-e) preferências de conteúdo;
-f) idioma e região;
-g) eventos técnicos necessários para funcionamento, segurança, melhoria do aplicativo e análise de desempenho.
+a) favoritos (identificadores das histórias/áudios marcados);
+b) histórico recente de reprodução (qual conteúdo foi ouvido e quando);
+c) estatísticas agregadas de sessão no perfil (por exemplo, tempo total ouvido, sessões concluídas e média por sessão);
+d) registros de atividade de conclusão de áudio (tipo de evento, identificador do conteúdo e duração);
+e) status do período de teste gratuito de 3 dias (início, fim e se já foi utilizado), quando elegível.
 
-5.5. Dados técnicos e do dispositivo
+Não rastreamos cliques em botões nem telas para publicidade. Não criamos perfil publicitário.
 
-Podemos coletar dados técnicos, como:
+5.5. Dados técnicos, push e dispositivo
 
-a) modelo do dispositivo;
-b) sistema operacional e versão;
-c) identificadores técnicos do aplicativo ou instalação;
-d) endereço IP;
-e) data e horário de acesso;
-f) registros de erro, falhas e desempenho;
-g) informações de conexão;
-h) identificadores de publicidade ou análise, quando aplicável e permitido pela legislação e pelas configurações da plataforma.
+Podemos tratar, quando necessário para o serviço:
+
+a) token de notificação push (FCM), somente se você ativar lembretes no aplicativo;
+b) plataforma do dispositivo (por exemplo, iOS ou Android) e fuso horário para lembretes;
+c) identificador de usuário Firebase e identificadores de transação/assinatura fornecidos pela App Store, Google Play ou RevenueCat;
+d) logs técnicos mínimos gerados pelos provedores de infraestrutura para segurança e entrega do serviço.
+
+Não utilizamos identificadores de publicidade (IDFA ou equivalentes) nem SDKs de analytics de terceiros para rastreamento ou anúncios.
 
 5.6. Dados de suporte e atendimento
 
@@ -176,7 +183,7 @@ i) detectar, prevenir e corrigir erros, falhas, fraudes, abusos ou usos não aut
 j) cumprir obrigações legais, regulatórias, fiscais, contábeis ou de defesa de direitos;
 k) enviar comunicações importantes sobre conta, assinatura, segurança, alterações nos Termos ou Política de Privacidade;
 l) enviar notificações relacionadas ao uso do aplicativo, quando autorizadas pelo usuário;
-m) realizar análises internas, métricas agregadas e estatísticas de uso, preferencialmente de forma anonimizada ou agregada;
+m) calcular estatísticas de uso da sua conta (por exemplo, rotina semanal e tempo ouvido) com base nos dados descritos na seção 5.4;
 n) proteger direitos, propriedade, segurança e integridade do ParentTime, dos usuários e de terceiros.
 
 8. BASES LEGAIS PARA O TRATAMENTO
@@ -214,34 +221,35 @@ O cancelamento, reembolso, contestação de cobrança e gerenciamento de assinat
 
 Podemos compartilhar dados pessoais, de forma limitada e necessária, com:
 
-a) provedores de autenticação, como Apple e Google, quando você escolhe usar esses métodos de login;
-b) lojas de aplicativos e processadores de pagamento, como App Store e Google Play, para processar assinaturas, compras, cancelamentos, reembolsos e restauração de compra;
-c) provedores de infraestrutura, hospedagem, banco de dados, armazenamento, segurança, notificações e autenticação;
-d) ferramentas de análise, diagnóstico de falhas, monitoramento de desempenho e prevenção de fraude;
-e) prestadores de suporte técnico, desenvolvimento, manutenção e operação do aplicativo;
-f) autoridades públicas, órgãos reguladores ou terceiros, quando houver obrigação legal, ordem válida, exercício de direitos ou proteção contra fraude e abuso;
-g) parceiros comerciais, somente quando necessário para execução do serviço, com base legal adequada e observadas as salvaguardas de proteção de dados.
+a) Apple (Sign in with Apple e App Store), quando você usa login Apple ou compra assinatura na App Store;
+b) Google (login com Google e serviços Firebase), quando você usa login Google ou a infraestrutura Firebase;
+c) RevenueCat, para validar status de assinatura premium e restauração de compras;
+d) Google Firebase / Google Cloud, para autenticação, Firestore (dados de conta e uso), Storage (áudios), Cloud Functions e Firebase Cloud Messaging (notificações push, se ativadas);
+e) Google Play, quando a compra é feita no Android;
+f) autoridades públicas, quando houver obrigação legal, ordem válida ou exercício de direitos.
 
 Não vendemos dados pessoais dos usuários.
 
 Não comercializamos dados pessoais de crianças.
 
-Não utilizamos dados de crianças para publicidade comportamental direcionada. Caso qualquer modelo futuro de publicidade ou parceria seja implementado, esta Política deverá ser atualizada previamente e o tratamento dependerá de base legal adequada, transparência e salvaguardas compatíveis com o público infantil.
+Não utilizamos dados para publicidade de terceiros nem para publicidade comportamental direcionada a crianças.
 
-11. SERVIÇOS DE TERCEIROS
+11. SERVIÇOS DE TERCEIROS UTILIZADOS
 
-O ParentTime pode utilizar serviços de terceiros para operar o aplicativo, incluindo, sem limitação:
+O ParentTime utiliza, na data desta Política, os seguintes serviços para operar o aplicativo:
 
-a) autenticação de usuários;
-b) armazenamento em nuvem;
-c) banco de dados;
-d) análise de erros e travamentos;
-e) notificações;
-f) analytics;
-g) pagamentos e assinaturas;
-h) atendimento e suporte.
+a) Firebase Authentication — login por e-mail, Apple ou Google;
+b) Cloud Firestore — perfil, favoritos, histórico recente, estatísticas de uso, status de teste gratuito e preferências de lembretes;
+c) Firebase Storage e Cloud Functions — entrega e gestão de conteúdos de áudio;
+d) Firebase Cloud Messaging — notificações push opcionais (lembretes), se você autorizar;
+e) RevenueCat — gestão de assinaturas e entitlement premium;
+f) App Store / Google Play — processamento de pagamentos e assinaturas.
 
-Esses terceiros atuam, conforme o caso, como operadores, controladores independentes ou parceiros tecnológicos. Envidaremos esforços razoáveis para utilizar fornecedores que adotem padrões adequados de segurança e privacidade.
+O aplicativo não integra Firebase Analytics, Google Analytics, Crashlytics, AdMob nem redes de publicidade para exibição de anúncios.
+
+Políticas dos provedores (consulte também): Apple (privacidade e App Store), Google/Firebase, RevenueCat.
+
+Esses terceiros tratam dados conforme seus contratos e políticas. O ParentTime envida esforços para utilizar fornecedores com padrões adequados de segurança e privacidade.
 
 12. TRANSFERÊNCIA INTERNACIONAL DE DADOS
 
@@ -314,13 +322,13 @@ g) notificações push, quando autorizadas pelo usuário no dispositivo.
 
 O usuário pode desativar notificações push nas configurações do dispositivo. Algumas comunicações transacionais e de segurança podem ser necessárias para a prestação do serviço.
 
-18. COOKIES E TECNOLOGIAS SEMELHANTES
+18. ARMAZENAMENTO LOCAL, SDKs E SITE
 
-O ParentTime é um aplicativo móvel e pode utilizar tecnologias equivalentes a cookies, como identificadores de dispositivo, SDKs, armazenamento local e eventos de uso.
+O ParentTime é um aplicativo móvel. Podemos usar armazenamento local no dispositivo (cache de catálogo de áudios e preferências de sessão) para melhorar desempenho.
 
-Essas tecnologias podem ser usadas para autenticação, funcionamento do aplicativo, segurança, prevenção de fraudes, análise de desempenho e melhoria da experiência.
+Os SDKs integrados servem para autenticação, banco de dados, assinaturas, reprodução de conteúdo e notificações opcionais — não para publicidade ou analytics de terceiros.
 
-Caso o ParentTime tenha site, landing page ou versão web, cookies e tecnologias semelhantes poderão ser utilizados conforme aviso específico ou configuração disponibilizada ao usuário.
+O site parenttime (páginas legais em GitHub Pages) pode usar apenas o necessário para exibir documentos; não utilizamos esse site para rastrear usuários do aplicativo.
 
 19. PRIVACIDADE NAS LOJAS DE APLICATIVOS
 
